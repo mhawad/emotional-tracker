@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF2B34812809F7CF00A6588F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2B34802809F7CF00A6588F /* GoogleService-Info.plist */; };
+		AF311ECB27EB9B6C00118C9D /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF311ECA27EB9B6C00118C9D /* SideMenuView.swift */; };
+		AF311ECD27EB9C5900118C9D /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF311ECC27EB9C5900118C9D /* SideMenuOptionRowView.swift */; };
+		AF311ED327EBB45A00118C9D /* LiveFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF311ED227EBB45A00118C9D /* LiveFrameView.swift */; };
+		AF311ED727EBB66F00118C9D /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF311ED627EBB66F00118C9D /* CameraError.swift */; };
+		AF311ED927EBB6B600118C9D /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF311ED827EBB6B600118C9D /* CameraManager.swift */; };
+		AF311EDB27EBBB2000118C9D /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF311EDA27EBBB2000118C9D /* FrameManager.swift */; };
+		AF311EDD27EBBF0500118C9D /* CGImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF311EDC27EBBF0500118C9D /* CGImage+Ext.swift */; };
+		AF48797E280767CA00EDC60C /* EmptyGraphPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48797D280767CA00EDC60C /* EmptyGraphPlaceholder.swift */; };
+		AF4D9AF227ED030D007ED7FA /* BufferPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D9AF127ED030D007ED7FA /* BufferPrediction.swift */; };
+		AF4D9AF627ED1200007ED7FA /* LivePredictionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D9AF527ED1200007ED7FA /* LivePredictionView.swift */; };
+		AF4D9AF927ED13D9007ED7FA /* EmotionRecognitionClassifierHNS.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AF4D9AF827ED13D9007ED7FA /* EmotionRecognitionClassifierHNS.mlmodel */; };
+		AF4D9AFB27ED14B5007ED7FA /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D9AFA27ED14B4007ED7FA /* ImageClassifier.swift */; };
+		AF62AAF1280898B8000BF67D /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62AAF0280898B8000BF67D /* GetStartedView.swift */; };
+		AF69191827F7809300D9BCDB /* SessionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF69191727F7809300D9BCDB /* SessionListViewModel.swift */; };
+		AF6B87DC27F22279004D749E /* SessionTextEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B87DB27F22279004D749E /* SessionTextEntryView.swift */; };
+		AF6B87DE27F23664004D749E /* RecordSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B87DD27F23664004D749E /* RecordSessionViewModel.swift */; };
+		AF6B87E027F260A2004D749E /* SessionDoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B87DF27F260A2004D749E /* SessionDoneView.swift */; };
+		AF6DDD0427FF618A00566640 /* StopwatchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6DDD0327FF618A00566640 /* StopwatchTest.swift */; };
+		AF7F63C727EB972600A96F5E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AF7F63C627EB972600A96F5E /* FirebaseAuth */; };
+		AF7F63C927EB972600A96F5E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AF7F63C827EB972600A96F5E /* FirebaseFirestore */; };
+		AF7F63CD27EB98DB00A96F5E /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7F63CC27EB98DB00A96F5E /* AppSettingsView.swift */; };
+		AF7F63CF27EB990500A96F5E /* MainUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7F63CE27EB990500A96F5E /* MainUserView.swift */; };
+		AF7F63D127EB991E00A96F5E /* ProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7F63D027EB991E00A96F5E /* ProfileInfoView.swift */; };
+		AF7F63D327EB994300A96F5E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7F63D227EB994300A96F5E /* ProfileView.swift */; };
+		AF7F63D527EB995B00A96F5E /* UserLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7F63D427EB995B00A96F5E /* UserLandingView.swift */; };
+		AF7F63D727EB999F00A96F5E /* SideMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7F63D627EB999F00A96F5E /* SideMenuOption.swift */; };
+		AF91F19627E8C62F0015CCE9 /* emotional-health-checkupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91F19527E8C62F0015CCE9 /* emotional-health-checkupApp.swift */; };
+		AF91F19827E8C62F0015CCE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91F19727E8C62F0015CCE9 /* ContentView.swift */; };
+		AF91F19A27E8C6310015CCE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF91F19927E8C6310015CCE9 /* Assets.xcassets */; };
+		AF91F19D27E8C6310015CCE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF91F19C27E8C6310015CCE9 /* Preview Assets.xcassets */; };
+		AF91F1A727E8CBF90015CCE9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91F1A627E8CBF90015CCE9 /* LoginView.swift */; };
+		AF91F1AF27E8CF0C0015CCE9 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91F1AE27E8CF0C0015CCE9 /* LogoView.swift */; };
+		AF91F1B327E8D38F0015CCE9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91F1B227E8D38F0015CCE9 /* CustomTextField.swift */; };
+		AF91F1B527E8D8EB0015CCE9 /* CustomAuthLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91F1B427E8D8EB0015CCE9 /* CustomAuthLabel.swift */; };
+		AF91F1B727E8DBF60015CCE9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91F1B627E8DBF60015CCE9 /* CustomButton.swift */; };
+		AF91F1B927E8EB740015CCE9 /* RecordSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91F1B827E8EB740015CCE9 /* RecordSessionView.swift */; };
+		AFB6DB9E27FCDBF6004E2EE8 /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6DB9D27FCDBF6004E2EE8 /* CustomDateFormatter.swift */; };
+		AFB89FFB27FCC92B00AE38F8 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB89FFA27FCC92B00AE38F8 /* TimeLineView.swift */; };
+		AFC40D0A27EE0E9600EA02F5 /* EmotionPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC40D0927EE0E9600EA02F5 /* EmotionPrediction.swift */; };
+		AFE79ED027F36E8B00D62EFF /* PredictionCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE79ECF27F36E8B00D62EFF /* PredictionCounter.swift */; };
+		AFFB8FDF280DA08200542A72 /* EHCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFB8FDE280DA08200542A72 /* EHCUITests.swift */; };
+		AFFB8FE1280DA08200542A72 /* EHCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFB8FE0280DA08200542A72 /* EHCUITestsLaunchTests.swift */; };
+		CF0F786227E8F038009965CE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F786127E8F038009965CE /* RegisterView.swift */; };
+		CF0F786D27E905C1009965CE /* LineChartView in Frameworks */ = {isa = PBXBuildFile; productRef = CF0F786C27E905C1009965CE /* LineChartView */; };
+		CF58170827EC946C0047EC87 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58170727EC946C0047EC87 /* AuthViewModel.swift */; };
+		CF58170C27EC94C00047EC87 /* MiniListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58170B27EC94C00047EC87 /* MiniListRow.swift */; };
+		CF58170E27EC94EF0047EC87 /* MiniListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58170D27EC94EF0047EC87 /* MiniListView.swift */; };
+		CF58173027ECB1330047EC87 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = CF58172F27ECB1330047EC87 /* FirebaseFirestoreSwift-Beta */; };
+		CF8BDE4B27F348C6005071FD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8BDE4A27F348C6005071FD /* UserModel.swift */; };
+		CFB9F0BB27FF413E005F8257 /* AuthViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB9F0B727FF413E005F8257 /* AuthViewModelTests.swift */; };
+		CFB9F0BC27FF413E005F8257 /* RecordSessionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB9F0B827FF413E005F8257 /* RecordSessionViewModelTests.swift */; };
+		CFB9F0BE27FF413E005F8257 /* SessionListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB9F0BA27FF413E005F8257 /* SessionListViewModelTests.swift */; };
+		CFDB39BC27F21490001CF008 /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB39BB27F21490001CF008 /* RecordModel.swift */; };
+		CFDB39BE27F21A25001CF008 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB39BD27F21A25001CF008 /* SessionService.swift */; };
+		F1573F722805B769002A5E14 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1573F712805B769002A5E14 /* ViewExtensions.swift */; };
+		F1E03DB927F4C31800530B7F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E03DB827F4C31800530B7F /* UserService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFFB8FE2280DA08200542A72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF91F18A27E8C62F0015CCE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF91F19127E8C62F0015CCE9;
+			remoteInfo = "emotional-health-checkup";
+		};
+		CFB9F0B227FF40D6005F8257 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF91F18A27E8C62F0015CCE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF91F19127E8C62F0015CCE9;
+			remoteInfo = "emotional-health-checkup";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF2B34802809F7CF00A6588F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF311ECA27EB9B6C00118C9D /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		AF311ECC27EB9C5900118C9D /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
+		AF311ED227EBB45A00118C9D /* LiveFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFrameView.swift; sourceTree = "<group>"; };
+		AF311ED627EBB66F00118C9D /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		AF311ED827EBB6B600118C9D /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		AF311EDA27EBBB2000118C9D /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
+		AF311EDC27EBBF0500118C9D /* CGImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Ext.swift"; sourceTree = "<group>"; };
+		AF48797D280767CA00EDC60C /* EmptyGraphPlaceholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyGraphPlaceholder.swift; sourceTree = "<group>"; };
+		AF4D9AF127ED030D007ED7FA /* BufferPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferPrediction.swift; sourceTree = "<group>"; };
+		AF4D9AF527ED1200007ED7FA /* LivePredictionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePredictionView.swift; sourceTree = "<group>"; };
+		AF4D9AF827ED13D9007ED7FA /* EmotionRecognitionClassifierHNS.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = EmotionRecognitionClassifierHNS.mlmodel; sourceTree = "<group>"; };
+		AF4D9AFA27ED14B4007ED7FA /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		AF62AAF0280898B8000BF67D /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
+		AF69191727F7809300D9BCDB /* SessionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionListViewModel.swift; sourceTree = "<group>"; };
+		AF6B87DB27F22279004D749E /* SessionTextEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTextEntryView.swift; sourceTree = "<group>"; };
+		AF6B87DD27F23664004D749E /* RecordSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSessionViewModel.swift; sourceTree = "<group>"; };
+		AF6B87DF27F260A2004D749E /* SessionDoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDoneView.swift; sourceTree = "<group>"; };
+		AF6DDD0327FF618A00566640 /* StopwatchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchTest.swift; sourceTree = "<group>"; };
+		AF7F63CC27EB98DB00A96F5E /* AppSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
+		AF7F63CE27EB990500A96F5E /* MainUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUserView.swift; sourceTree = "<group>"; };
+		AF7F63D027EB991E00A96F5E /* ProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoView.swift; sourceTree = "<group>"; };
+		AF7F63D227EB994300A96F5E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AF7F63D427EB995B00A96F5E /* UserLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLandingView.swift; sourceTree = "<group>"; };
+		AF7F63D627EB999F00A96F5E /* SideMenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOption.swift; sourceTree = "<group>"; };
+		AF91F19227E8C62F0015CCE9 /* EHC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EHC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF91F19527E8C62F0015CCE9 /* emotional-health-checkupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "emotional-health-checkupApp.swift"; sourceTree = "<group>"; };
+		AF91F19727E8C62F0015CCE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF91F19927E8C6310015CCE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF91F19C27E8C6310015CCE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF91F1A627E8CBF90015CCE9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AF91F1AE27E8CF0C0015CCE9 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		AF91F1B227E8D38F0015CCE9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		AF91F1B427E8D8EB0015CCE9 /* CustomAuthLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAuthLabel.swift; sourceTree = "<group>"; };
+		AF91F1B627E8DBF60015CCE9 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		AF91F1B827E8EB740015CCE9 /* RecordSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSessionView.swift; sourceTree = "<group>"; };
+		AFB6DB9D27FCDBF6004E2EE8 /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
+		AFB89FFA27FCC92B00AE38F8 /* TimeLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
+		AFC40D0927EE0E9600EA02F5 /* EmotionPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionPrediction.swift; sourceTree = "<group>"; };
+		AFE79ECF27F36E8B00D62EFF /* PredictionCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionCounter.swift; sourceTree = "<group>"; };
+		AFFB8FDC280DA08200542A72 /* EHCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EHCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFB8FDE280DA08200542A72 /* EHCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EHCUITests.swift; sourceTree = "<group>"; };
+		AFFB8FE0280DA08200542A72 /* EHCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EHCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF0F786127E8F038009965CE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		CF58170727EC946C0047EC87 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		CF58170B27EC94C00047EC87 /* MiniListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MiniListRow.swift; path = "emotional-health-checkup/Component/MiniListRow.swift"; sourceTree = SOURCE_ROOT; };
+		CF58170D27EC94EF0047EC87 /* MiniListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniListView.swift; sourceTree = "<group>"; };
+		CF8BDE4A27F348C6005071FD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CFB9F0AE27FF40D6005F8257 /* emotional-health-checkupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "emotional-health-checkupTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB9F0B727FF413E005F8257 /* AuthViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModelTests.swift; sourceTree = "<group>"; };
+		CFB9F0B827FF413E005F8257 /* RecordSessionViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordSessionViewModelTests.swift; sourceTree = "<group>"; };
+		CFB9F0BA27FF413E005F8257 /* SessionListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListViewModelTests.swift; sourceTree = "<group>"; };
+		CFDB39BB27F21490001CF008 /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
+		CFDB39BD27F21A25001CF008 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		F1573F712805B769002A5E14 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		F1E03DB827F4C31800530B7F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF91F18F27E8C62F0015CCE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7F63C927EB972600A96F5E /* FirebaseFirestore in Frameworks */,
+				CF58173027ECB1330047EC87 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				AF7F63C727EB972600A96F5E /* FirebaseAuth in Frameworks */,
+				CF0F786D27E905C1009965CE /* LineChartView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFB8FD9280DA08200542A72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB9F0AB27FF40D6005F8257 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF311EC927EB9B4300118C9D /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				AF311ECC27EB9C5900118C9D /* SideMenuOptionRowView.swift */,
+				AF311ECA27EB9B6C00118C9D /* SideMenuView.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		AF4D9AF727ED13C1007ED7FA /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				AF4D9AF827ED13D9007ED7FA /* EmotionRecognitionClassifierHNS.mlmodel */,
+				AF4D9AFA27ED14B4007ED7FA /* ImageClassifier.swift */,
+			);
+			path = CoreML;
+			sourceTree = "<group>";
+		};
+		AF7F63CA27EB981600A96F5E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF58170727EC946C0047EC87 /* AuthViewModel.swift */,
+				AF6B87DD27F23664004D749E /* RecordSessionViewModel.swift */,
+				AF69191727F7809300D9BCDB /* SessionListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AF7F63CB27EB982B00A96F5E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AF311ED627EBB66F00118C9D /* CameraError.swift */,
+				AF311ED827EBB6B600118C9D /* CameraManager.swift */,
+				AF311EDC27EBBF0500118C9D /* CGImage+Ext.swift */,
+				AFB6DB9D27FCDBF6004E2EE8 /* CustomDateFormatter.swift */,
+				AF311EDA27EBBB2000118C9D /* FrameManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		AF91F18927E8C62F0015CCE9 = {
+			isa = PBXGroup;
+			children = (
+				AF91F19427E8C62F0015CCE9 /* emotional-health-checkup */,
+				AF2B34802809F7CF00A6588F /* GoogleService-Info.plist */,
+				CFB9F0AF27FF40D6005F8257 /* emotional-health-checkupTests */,
+				AFFB8FDD280DA08200542A72 /* EHCUITests */,
+				AF91F19327E8C62F0015CCE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF91F19327E8C62F0015CCE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF91F19227E8C62F0015CCE9 /* EHC.app */,
+				CFB9F0AE27FF40D6005F8257 /* emotional-health-checkupTests.xctest */,
+				AFFB8FDC280DA08200542A72 /* EHCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF91F19427E8C62F0015CCE9 /* emotional-health-checkup */ = {
+			isa = PBXGroup;
+			children = (
+				AF91F19527E8C62F0015CCE9 /* emotional-health-checkupApp.swift */,
+				AF91F19727E8C62F0015CCE9 /* ContentView.swift */,
+				AF91F1AD27E8CC6A0015CCE9 /* Component */,
+				AF4D9AF727ED13C1007ED7FA /* CoreML */,
+				AF91F1AA27E8CC310015CCE9 /* Model */,
+				AF91F1AC27E8CC440015CCE9 /* Service */,
+				AF7F63CB27EB982B00A96F5E /* Util */,
+				AF91F1A827E8CC080015CCE9 /* View */,
+				AF7F63CA27EB981600A96F5E /* ViewModel */,
+				F1573F702805B733002A5E14 /* Extensions */,
+				AF91F19927E8C6310015CCE9 /* Assets.xcassets */,
+				AF91F19B27E8C6310015CCE9 /* Preview Content */,
+			);
+			path = "emotional-health-checkup";
+			sourceTree = "<group>";
+		};
+		AF91F19B27E8C6310015CCE9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AF91F19C27E8C6310015CCE9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF91F1A827E8CC080015CCE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF311EC927EB9B4300118C9D /* SideMenu */,
+				F12A714D27ED08B70083A112 /* Authentication */,
+				AF7F63CC27EB98DB00A96F5E /* AppSettingsView.swift */,
+				AF7F63CE27EB990500A96F5E /* MainUserView.swift */,
+				AF7F63D227EB994300A96F5E /* ProfileView.swift */,
+				AF91F1B827E8EB740015CCE9 /* RecordSessionView.swift */,
+				AF7F63D427EB995B00A96F5E /* UserLandingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF91F1AA27E8CC310015CCE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF4D9AF127ED030D007ED7FA /* BufferPrediction.swift */,
+				AFC40D0927EE0E9600EA02F5 /* EmotionPrediction.swift */,
+				AFE79ECF27F36E8B00D62EFF /* PredictionCounter.swift */,
+				CFDB39BB27F21490001CF008 /* RecordModel.swift */,
+				AF7F63D627EB999F00A96F5E /* SideMenuOption.swift */,
+				CF8BDE4A27F348C6005071FD /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF91F1AC27E8CC440015CCE9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CFDB39BD27F21A25001CF008 /* SessionService.swift */,
+				F1E03DB827F4C31800530B7F /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AF91F1AD27E8CC6A0015CCE9 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				AF91F1B427E8D8EB0015CCE9 /* CustomAuthLabel.swift */,
+				AF91F1B627E8DBF60015CCE9 /* CustomButton.swift */,
+				AF91F1B227E8D38F0015CCE9 /* CustomTextField.swift */,
+				AF48797D280767CA00EDC60C /* EmptyGraphPlaceholder.swift */,
+				AF62AAF0280898B8000BF67D /* GetStartedView.swift */,
+				AF311ED227EBB45A00118C9D /* LiveFrameView.swift */,
+				AF4D9AF527ED1200007ED7FA /* LivePredictionView.swift */,
+				AF91F1AE27E8CF0C0015CCE9 /* LogoView.swift */,
+				CF58170B27EC94C00047EC87 /* MiniListRow.swift */,
+				CF58170D27EC94EF0047EC87 /* MiniListView.swift */,
+				AF7F63D027EB991E00A96F5E /* ProfileInfoView.swift */,
+				AF6B87DF27F260A2004D749E /* SessionDoneView.swift */,
+				AF6B87DB27F22279004D749E /* SessionTextEntryView.swift */,
+				AFB89FFA27FCC92B00AE38F8 /* TimeLineView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		AFFB8FDD280DA08200542A72 /* EHCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFFB8FDE280DA08200542A72 /* EHCUITests.swift */,
+				AFFB8FE0280DA08200542A72 /* EHCUITestsLaunchTests.swift */,
+			);
+			path = EHCUITests;
+			sourceTree = "<group>";
+		};
+		CFB9F0AF27FF40D6005F8257 /* emotional-health-checkupTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFB9F0B727FF413E005F8257 /* AuthViewModelTests.swift */,
+				CFB9F0B827FF413E005F8257 /* RecordSessionViewModelTests.swift */,
+				AF6DDD0327FF618A00566640 /* StopwatchTest.swift */,
+				CFB9F0BA27FF413E005F8257 /* SessionListViewModelTests.swift */,
+			);
+			path = "emotional-health-checkupTests";
+			sourceTree = "<group>";
+		};
+		F12A714D27ED08B70083A112 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AF91F1A627E8CBF90015CCE9 /* LoginView.swift */,
+				CF0F786127E8F038009965CE /* RegisterView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F1573F702805B733002A5E14 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F1573F712805B769002A5E14 /* ViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF91F19127E8C62F0015CCE9 /* emotional-health-checkup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF91F1A027E8C6310015CCE9 /* Build configuration list for PBXNativeTarget "emotional-health-checkup" */;
+			buildPhases = (
+				AF91F18E27E8C62F0015CCE9 /* Sources */,
+				AF91F18F27E8C62F0015CCE9 /* Frameworks */,
+				AF91F19027E8C62F0015CCE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "emotional-health-checkup";
+			packageProductDependencies = (
+				CF0F786C27E905C1009965CE /* LineChartView */,
+				AF7F63C627EB972600A96F5E /* FirebaseAuth */,
+				AF7F63C827EB972600A96F5E /* FirebaseFirestore */,
+				CF58172F27ECB1330047EC87 /* FirebaseFirestoreSwift-Beta */,
+			);
+			productName = "emotional-health-checkup";
+			productReference = AF91F19227E8C62F0015CCE9 /* EHC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFFB8FDB280DA08200542A72 /* EHCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFB8FE6280DA08200542A72 /* Build configuration list for PBXNativeTarget "EHCUITests" */;
+			buildPhases = (
+				AFFB8FD8280DA08200542A72 /* Sources */,
+				AFFB8FD9280DA08200542A72 /* Frameworks */,
+				AFFB8FDA280DA08200542A72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFFB8FE3280DA08200542A72 /* PBXTargetDependency */,
+			);
+			name = EHCUITests;
+			productName = EHCUITests;
+			productReference = AFFB8FDC280DA08200542A72 /* EHCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CFB9F0AD27FF40D6005F8257 /* emotional-health-checkupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB9F0B627FF40D6005F8257 /* Build configuration list for PBXNativeTarget "emotional-health-checkupTests" */;
+			buildPhases = (
+				CFB9F0AA27FF40D6005F8257 /* Sources */,
+				CFB9F0AB27FF40D6005F8257 /* Frameworks */,
+				CFB9F0AC27FF40D6005F8257 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFB9F0B327FF40D6005F8257 /* PBXTargetDependency */,
+			);
+			name = "emotional-health-checkupTests";
+			productName = "emotional-health-checkupTests";
+			productReference = CFB9F0AE27FF40D6005F8257 /* emotional-health-checkupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF91F18A27E8C62F0015CCE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					AF91F19127E8C62F0015CCE9 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					AFFB8FDB280DA08200542A72 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = AF91F19127E8C62F0015CCE9;
+					};
+					CFB9F0AD27FF40D6005F8257 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = AF91F19127E8C62F0015CCE9;
+					};
+				};
+			};
+			buildConfigurationList = AF91F18D27E8C62F0015CCE9 /* Build configuration list for PBXProject "emotional-health-checkup" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF91F18927E8C62F0015CCE9;
+			packageReferences = (
+				CF0F786B27E905C1009965CE /* XCRemoteSwiftPackageReference "LineChartView" */,
+				AF7F63C527EB972600A96F5E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = AF91F19327E8C62F0015CCE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF91F19127E8C62F0015CCE9 /* emotional-health-checkup */,
+				CFB9F0AD27FF40D6005F8257 /* emotional-health-checkupTests */,
+				AFFB8FDB280DA08200542A72 /* EHCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF91F19027E8C62F0015CCE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF91F19D27E8C6310015CCE9 /* Preview Assets.xcassets in Resources */,
+				AF91F19A27E8C6310015CCE9 /* Assets.xcassets in Resources */,
+				AF2B34812809F7CF00A6588F /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFB8FDA280DA08200542A72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB9F0AC27FF40D6005F8257 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF91F18E27E8C62F0015CCE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF311ECD27EB9C5900118C9D /* SideMenuOptionRowView.swift in Sources */,
+				AF91F1B927E8EB740015CCE9 /* RecordSessionView.swift in Sources */,
+				AF69191827F7809300D9BCDB /* SessionListViewModel.swift in Sources */,
+				AFC40D0A27EE0E9600EA02F5 /* EmotionPrediction.swift in Sources */,
+				AF62AAF1280898B8000BF67D /* GetStartedView.swift in Sources */,
+				AF4D9AF927ED13D9007ED7FA /* EmotionRecognitionClassifierHNS.mlmodel in Sources */,
+				AF91F1A727E8CBF90015CCE9 /* LoginView.swift in Sources */,
+				AF7F63CD27EB98DB00A96F5E /* AppSettingsView.swift in Sources */,
+				AF311ECB27EB9B6C00118C9D /* SideMenuView.swift in Sources */,
+				AF7F63D727EB999F00A96F5E /* SideMenuOption.swift in Sources */,
+				AF91F1B527E8D8EB0015CCE9 /* CustomAuthLabel.swift in Sources */,
+				AFB89FFB27FCC92B00AE38F8 /* TimeLineView.swift in Sources */,
+				AF91F1AF27E8CF0C0015CCE9 /* LogoView.swift in Sources */,
+				AF311ED927EBB6B600118C9D /* CameraManager.swift in Sources */,
+				AF91F19827E8C62F0015CCE9 /* ContentView.swift in Sources */,
+				AF91F1B727E8DBF60015CCE9 /* CustomButton.swift in Sources */,
+				AF6B87DE27F23664004D749E /* RecordSessionViewModel.swift in Sources */,
+				AF6B87E027F260A2004D749E /* SessionDoneView.swift in Sources */,
+				AF311EDD27EBBF0500118C9D /* CGImage+Ext.swift in Sources */,
+				AFB6DB9E27FCDBF6004E2EE8 /* CustomDateFormatter.swift in Sources */,
+				F1E03DB927F4C31800530B7F /* UserService.swift in Sources */,
+				AF7F63D327EB994300A96F5E /* ProfileView.swift in Sources */,
+				F1573F722805B769002A5E14 /* ViewExtensions.swift in Sources */,
+				AF48797E280767CA00EDC60C /* EmptyGraphPlaceholder.swift in Sources */,
+				AF4D9AF627ED1200007ED7FA /* LivePredictionView.swift in Sources */,
+				AF311ED327EBB45A00118C9D /* LiveFrameView.swift in Sources */,
+				CFDB39BC27F21490001CF008 /* RecordModel.swift in Sources */,
+				AF7F63D127EB991E00A96F5E /* ProfileInfoView.swift in Sources */,
+				AF311ED727EBB66F00118C9D /* CameraError.swift in Sources */,
+				CF0F786227E8F038009965CE /* RegisterView.swift in Sources */,
+				CFDB39BE27F21A25001CF008 /* SessionService.swift in Sources */,
+				AF6B87DC27F22279004D749E /* SessionTextEntryView.swift in Sources */,
+				AF4D9AFB27ED14B5007ED7FA /* ImageClassifier.swift in Sources */,
+				AF91F1B327E8D38F0015CCE9 /* CustomTextField.swift in Sources */,
+				AF311EDB27EBBB2000118C9D /* FrameManager.swift in Sources */,
+				CF58170E27EC94EF0047EC87 /* MiniListView.swift in Sources */,
+				CF58170827EC946C0047EC87 /* AuthViewModel.swift in Sources */,
+				AF7F63D527EB995B00A96F5E /* UserLandingView.swift in Sources */,
+				CF58170C27EC94C00047EC87 /* MiniListRow.swift in Sources */,
+				CF8BDE4B27F348C6005071FD /* UserModel.swift in Sources */,
+				AF7F63CF27EB990500A96F5E /* MainUserView.swift in Sources */,
+				AFE79ED027F36E8B00D62EFF /* PredictionCounter.swift in Sources */,
+				AF4D9AF227ED030D007ED7FA /* BufferPrediction.swift in Sources */,
+				AF91F19627E8C62F0015CCE9 /* emotional-health-checkupApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFB8FD8280DA08200542A72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFB8FDF280DA08200542A72 /* EHCUITests.swift in Sources */,
+				AFFB8FE1280DA08200542A72 /* EHCUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB9F0AA27FF40D6005F8257 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB9F0BB27FF413E005F8257 /* AuthViewModelTests.swift in Sources */,
+				CFB9F0BC27FF413E005F8257 /* RecordSessionViewModelTests.swift in Sources */,
+				AF6DDD0427FF618A00566640 /* StopwatchTest.swift in Sources */,
+				CFB9F0BE27FF413E005F8257 /* SessionListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFFB8FE3280DA08200542A72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF91F19127E8C62F0015CCE9 /* emotional-health-checkup */;
+			targetProxy = AFFB8FE2280DA08200542A72 /* PBXContainerItemProxy */;
+		};
+		CFB9F0B327FF40D6005F8257 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF91F19127E8C62F0015CCE9 /* emotional-health-checkup */;
+			targetProxy = CFB9F0B227FF40D6005F8257 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AF91F19E27E8C6310015CCE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF91F19F27E8C6310015CCE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF91F1A127E8C6310015CCE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_STATIC_ANALYZER_MODE_ON_ANALYZE_ACTION = shallow;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"emotional-health-checkup/Preview Content\"";
+				DEVELOPMENT_TEAM = HWYFX3H97P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to detect facial emotion.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iostrio.emotional-health-checkup";
+				PRODUCT_NAME = EHC;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF91F1A227E8C6310015CCE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_STATIC_ANALYZER_MODE_ON_ANALYZE_ACTION = shallow;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"emotional-health-checkup/Preview Content\"";
+				DEVELOPMENT_TEAM = HWYFX3H97P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to detect facial emotion.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iostrio.emotional-health-checkup";
+				PRODUCT_NAME = EHC;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFFB8FE4280DA08200542A72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pbfuid.EHCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "emotional-health-checkup";
+			};
+			name = Debug;
+		};
+		AFFB8FE5280DA08200542A72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pbfuid.EHCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "emotional-health-checkup";
+			};
+			name = Release;
+		};
+		CFB9F0B427FF40D6005F8257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HD55Y7F67X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mirna.emotional-health-checkupTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EHC.app/EHC";
+			};
+			name = Debug;
+		};
+		CFB9F0B527FF40D6005F8257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HD55Y7F67X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mirna.emotional-health-checkupTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EHC.app/EHC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF91F18D27E8C62F0015CCE9 /* Build configuration list for PBXProject "emotional-health-checkup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF91F19E27E8C6310015CCE9 /* Debug */,
+				AF91F19F27E8C6310015CCE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF91F1A027E8C6310015CCE9 /* Build configuration list for PBXNativeTarget "emotional-health-checkup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF91F1A127E8C6310015CCE9 /* Debug */,
+				AF91F1A227E8C6310015CCE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFFB8FE6280DA08200542A72 /* Build configuration list for PBXNativeTarget "EHCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFB8FE4280DA08200542A72 /* Debug */,
+				AFFB8FE5280DA08200542A72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB9F0B627FF40D6005F8257 /* Build configuration list for PBXNativeTarget "emotional-health-checkupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB9F0B427FF40D6005F8257 /* Debug */,
+				CFB9F0B527FF40D6005F8257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF7F63C527EB972600A96F5E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.10.0;
+			};
+		};
+		CF0F786B27E905C1009965CE /* XCRemoteSwiftPackageReference "LineChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Jonathan-Gander/LineChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF7F63C627EB972600A96F5E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF7F63C527EB972600A96F5E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AF7F63C827EB972600A96F5E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF7F63C527EB972600A96F5E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CF0F786C27E905C1009965CE /* LineChartView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF0F786B27E905C1009965CE /* XCRemoteSwiftPackageReference "LineChartView" */;
+			productName = LineChartView;
+		};
+		CF58172F27ECB1330047EC87 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF7F63C527EB972600A96F5E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AF91F18A27E8C62F0015CCE9 /* Project object */;
+}

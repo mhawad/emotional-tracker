@@ -1,0 +1,38 @@
+#Customize the codemagic.yml file according to your project and commit it to the root of the repository
+
+workflows:
+  emotional-health-checkup-workflow:
+    name: Emotional Health Checkup Pipeline
+    environment:
+      xcode: latest
+      vars:
+          PROJECT: "emotional-health-checkup.xcodeproj"
+          SCHEME: "emotional-health-checkup"
+    #triggering:
+      #events:
+        #- push
+      #branch_patterns:
+        #- pattern: '*'
+          #include: true
+          #source: true
+      #cancel_previous_builds: true
+    scripts:
+      - name: CICD Started
+        script: echo "Welcome to happy tracker CI CD setup!"
+      - name: iOS Run Test
+        script: |
+          xcode-project run-tests \
+              --project "$PROJECT" \
+              --scheme "$SCHEME" \
+              --device "iPhone 11"
+   #clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+        test_report: build/ios/test/*.xml
+      - name: Build emotional-health-checkup
+        script: |
+          xcodebuild build -project "$PROJECT" \
+          -scheme "$SCHEME" \
+          CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+    publishing:
+      email:
+        recipients:
+          - ajaxdwdev@gmail.com
